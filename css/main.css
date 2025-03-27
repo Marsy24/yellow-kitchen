@@ -1,1 +1,226 @@
 @import url('./variables.css');
+
+/* shared */
+.container {
+    max-width: 1440px;
+    padding: 0 92px;
+    margin: 0 auto;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-reset {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.link {
+    display: block;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.main-title {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: var(--line-height-xxl);
+    letter-spacing: 3px;
+}
+
+/* header */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-bottom: 1px solid var(--color-gray-light);
+    background-color: white;
+}
+
+.header, .header__button {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: var(--line-height-md);
+    color: var(--color-gray);
+    letter-spacing: var(--letter-spacing-05);
+}
+
+.header__container {
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header__buttons {
+    align-items: center;
+    gap: 40px;
+}
+
+.header__button {
+    align-items: center;
+}
+
+.menu-btn {
+    width: 48px;
+    height: 48px;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 8px 40px 0px #00000014;
+}
+
+.menu-btn__line {
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-gray);
+}
+
+.header__aside {
+    position: absolute;
+    top: 73px;
+    right: 0;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 9;
+    width: 100%;
+    max-width: 285px;
+    padding: 20px 35px 0 35px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.address {
+    font-style: normal;
+    gap: 13px;
+}
+
+.address__info {
+    flex-direction: column;
+    gap: 6px;
+}
+
+.address__link {
+    color: black;
+    font-style: normal;
+}
+
+.address__time {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.nav-list {
+    flex-direction: column;
+}
+
+.nav-list__link {
+    padding: 22px 0;
+    border-top: 1px solid var(--color-gray-extra-light);
+}
+
+.header__switch-lang {
+    align-self: end;
+}
+
+/* Hero */
+.hero__container {
+    position: relative;
+    padding-top: 120px;
+    background-image: url('../images/bg-hero.png');
+    background-size: 803px 706px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 85px) 10px;
+}
+
+.hero__title {
+    max-width: 534px;
+    margin-bottom: 88px;
+}
+
+.links-list {
+    gap: 24px;
+    padding-bottom: 380px;
+}
+
+.links-list__link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15.5px 22px;
+    border: 2px solid var(--color-yellow-bright);
+    border-radius: 4px;
+}
+
+.links-list__title {
+    font-weight: 700;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-md);
+    letter-spacing: var(--letter-spacing-05);
+}
+
+.links-list__sub-title {
+    font-weight: 400;
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+}
+
+.teasers-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    padding: 24px 25px 24px 92px;
+    gap: 46px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 40px 0px #00000014;
+}
+
+.teasers-list__teaser {
+    padding-left: 64px;
+    font-weight: 400;
+    max-width: 320px;
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-lg);
+    letter-spacing: var(--letter-spacing-05);
+    color: var(--color-gray-dark);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+}
+
+.delivery-teaser {
+    background-image: url('../images/teaser-1.svg');
+}
+
+.price-teaser {
+    background-image: url('../images/teaser-2.svg');
+}
+
+.product-teaser {
+    background-image: url('../images/teaser-3.svg');
+}

@@ -9,4 +9,12 @@
     --line-height-lg: 24px;
     --line-height-xl: 32px;
     --line-height-xxl: 64px;
+
+    --letter-spacing-05: 0.5px;
+
+    --color-gray: #9093A6;
+    --color-gray-dark: #3F4255;
+    --color-gray-light: #D4D7E5;
+    --color-gray-extra-light: #F2F4FA;
+    --color-yellow-bright: #FFE145;
 }

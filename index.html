@@ -13,13 +13,13 @@
 
 <body>
     <header class="header">
-        <div class="header__container container">
+        <div class="header__container container flex">
             <a href="#" class="header__link link">
                 <img src="./images/logo.svg" alt="Logo" class="header__img">
             </a>
 
-            <div class="header__buttons">
-                <button id="log-in-button" type="button" class="header__button log-in button-reset">
+            <div class="header__buttons flex">
+                <button id="log-in-button" type="button" class="header__button log-in button-reset flex">
                     <svg class="log-in__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none">
                         <path
@@ -29,7 +29,7 @@
                     <span class="log-in__text">Log in</span>
                 </button>
 
-                <button id="cart-button" class="header__button cart-count button-reset" type="button">
+                <button id="cart-button" type="button" class="header__button cart-count button-reset flex">
                     <svg class="cart-count__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_23_3)">
@@ -46,11 +46,15 @@
                     <span id="cart-button-count" class="cart-count__count">0</span>
                 </button>
 
-                <button id="menu-btn" class="header__button button-reset" type="button"></button>
+                <button id="menu-btn" type="button" class="header__button menu-btn button-reset flex">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line hidden-active"></span>
+                </button>
             </div>
 
-            <aside class="header__aside">
-                <address class="header__address address">
+            <aside class="header__aside flex">
+                <address class="header__address address flex">
                     <svg class="address__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none">
                         <g clip-path="url(#clip0_48_726)">
@@ -64,7 +68,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <div class="address__info">
+                    <div class="address__info flex">
                         <a href="tel:0800111126" class="address__link link">0800 111 126</a>
                         <span class="address__time">8:00 - 22:00</span>
                     </div>
@@ -72,16 +76,16 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list nav-list list-reset flex">
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Delivery info</a>
+                            <a href="#" class="nav-list__link link">Delivery info</a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">About us</a>
+                            <a href="#" class="nav-list__link link">About us</a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Restaurants</a>
+                            <a href="#" class="nav-list__link link">Restaurants</a>
                         </li>
                         <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Specialities</a>
+                            <a href="#" class="nav-list__link link">Specialities</a>
                         </li>
                     </ul>
                 </nav>
@@ -101,13 +105,13 @@
                 <h1 class="hero__title main-title">Your Food court at home</h1>
                 <ul class="hero__links links-list list-reset flex">
                     <li class="links-list__item">
-                        <a href="#" class="links-list__link link">
+                        <a href="#" class="links-list__link link flex">
                             <span class="links-list__title">Delivery</span>
                             <span class="links-list__sub-title">Order in</span>
                         </a>
                     </li>
                     <li class="links-list__item">
-                        <a href="#" class="links-list__link link">
+                        <a href="#" class="links-list__link link flex">
                             <span class="links-list__title">Takeout</span>
                             <span class="links-list__sub-title">Grab and go</span>
                         </a>
@@ -115,19 +119,19 @@
                 </ul>
                 <ul class="hero__teasers teasers-list list-reset flex">
                     <li class="teasers-list__item">
-                        <div class="teasers-list__content">
+                        <p class="teasers-list__teaser delivery-teaser">
                             delivery in all paris in less than 30 minutes
-                        </div>
+                        </p>
                     </li>
                     <li class="teasers-list__item">
-                        <div class="teasers-list__content">
+                        <p class="teasers-list__teaser price-teaser">
                             Free delivery from 29 euros
-                        </div>
+                        </p>
                     </li>
                     <li class="teasers-list__item">
-                        <div class="teasers-list__content">
+                        <p class="teasers-list__teaser product-teaser">
                             Only fresh and French products
-                        </div>
+                        </p>
                     </li>
                 </ul>
             </div>
