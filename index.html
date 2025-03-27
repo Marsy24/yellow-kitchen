@@ -135,9 +135,9 @@
 
         <section class="restaurants offset-sm">
             <div class="restaurants__container container">
-                <div class="restaurants__top">
+                <div class="restaurants__top top-header">
                     <h2 class="restaurans__title second-title">Restaurants</h2>
-                    <a href="#" class="restaurants__link link lowercase">Show all</a>
+                    <a href="#" class="restaurants__link link lowercase show-all">Show all</a>
                 </div>
 
                 <div class="restaurants__swiper swiper">
@@ -186,7 +186,8 @@
             <div class="nearest-rest__container container">
                 <div class="nearest-rest__col flex">
                     <h2 class="nearest-rest__title second-title">Your nearest restaurants</h2>
-                    <p class="nearest-rest__descr">Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+                    <p class="nearest-rest__descr">Each kitchen works with its own delivery area to deliver food to you
+                        as soon as possible</p>
                 </div>
                 <div class="nearest-rest__col flex">
                     <input id="search-input" type="text" class="nearest-rest__search search">
@@ -195,7 +196,46 @@
             </div>
         </section>
 
+        <section class="specialities">
+            <div class="specialities__container container">
+                <div class="specialities__top top-header">
+                    <h2 class="specialities__title second-title">Specialities</h2>
+                    <a href="#" class="specialities__link link show-all lowercase">Show all</a>
+                </div>
 
+                <div class="specialities__swiper swiper">
+                    <div class="specialities__swiper-wrapper swiper-wrapper">
+                        <div class="specialities__card specialities-card swiper-slide bagel">
+                            <h3 class="specialities-card__title third-title">Bagel</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide burger">
+                            <h3 class="specialities-card__title third-title">Burger</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide chiken">
+                            <h3 class="specialities-card__title third-title">Chicken</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide fish">
+                            <h3 class="specialities-card__title third-title">Fish</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide fish-chips">
+                            <h3 class="specialities-card__title third-title">Fish’Chips</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide salads">
+                            <h3 class="specialities-card__title third-title">Salads</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide pizza">
+                            <h3 class="specialities-card__title third-title">Pizza</h3>
+                        </div>
+                        <div class="specialities__card specialities-card swiper-slide pasta">
+                            <h3 class="specialities-card__title third-title">Pasta</h3>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
