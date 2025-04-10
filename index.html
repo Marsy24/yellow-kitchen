@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/global.css" />
@@ -181,14 +182,14 @@
 
       <section id="restaurants" class="restaurants offset-sm">
         <div class="restaurants__container container">
-          <div class="restaurants__top top-header">
-            <h2 class="restaurans__title second-title">Restaurants</h2>
-            <a href="#" class="restaurants__link link lowercase show-all"
+          <div class="restaurants__top section-header flex">
+            <h2 class="section-header__title second-title">Restaurants</h2>
+            <a href="#" class="section-header__link link lowercase show-all"
               >Show all</a
             >
           </div>
 
-          <div class="restaurants__swiper swiper">
+          <div id="restaurants-swiper" class="restaurants__swiper swiper">
             <div class="restaurants__swiper-wrapper swiper-wrapper">
               <div class="restaurants__card rest-card swiper-slide">
                 <a class="rest-card__content link flex">
@@ -291,9 +292,9 @@
 
       <section id="specialities" class="specialities offset">
         <div class="specialities__container container">
-          <div class="specialities__top top-header">
-            <h2 class="specialities__title second-title">Specialities</h2>
-            <a href="#" class="specialities__link link show-all lowercase"
+          <div class="specialities__top section-header flex">
+            <h2 class="section-header__title second-title">Specialities</h2>
+            <a href="#" class="section-header__link link show-all lowercase"
               >Show all</a
             >
           </div>
@@ -323,7 +324,7 @@
               <div
                 class="specialities__card specialities-card swiper-slide fish-chips"
               >
-                <h3 class="specialities-card__title third-title">Fish’Chips</h3>
+                <h3 class="specialities-card__title third-title">Fish`Chips</h3>
               </div>
               <div
                 class="specialities__card specialities-card swiper-slide salads"

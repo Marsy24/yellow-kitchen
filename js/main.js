@@ -1,7 +1,8 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
-
 const init = () => {
-    
+    const restaurantsSwiperElement = document.getElementById('restaurants-swiper');
+    const restaurantsSwiper = new Swiper(restaurantsSwiperElement, {
+        
+    });
 }
 
+init()
